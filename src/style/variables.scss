@@ -1,0 +1,38 @@
+$esw-color-text-primary: #303030;
+$esw-color-text-primary-light: #828282;
+
+$esw-font: "Helvetica Neue",
+serif;
+$esw-color-background: #fafafa;
+$esw-color-dividers: mix(white, #303030, 90%);
+$esw-color-disabled-background: mix(white, #303030, 90%);
+$esw-color-dividers-dark: rgba(48, 48, 48, 0.6);
+$esw-color-footer-background: #000000;
+$esw-color-dark-background: #000;
+$esw-color-tooltip-background: #232323;
+$esw-color-primary: #9B9B9B;
+$esw-color-error: #e42328;
+$esw-input-button-size: 40px;
+$esw-border-color: #ffffff;
+
+$esw-table-text-colour: #4A4A4A;
+$header-margin-bottom: 22px;
+
+$retailer-font-size-error: 10px;
+$retailer-form-style: (inputPadding: 16px 10px 3px 16px,
+  labelLeft: 18px, //36px,
+  formLabelSize: 1rem,
+  formLabelSizeFilled: 12px,
+  formLabelColor: mix(white, $esw-color-text-primary, 50%),
+  formColor: $esw-color-text-primary,
+) !default;
+
+
+$small-breakpoint: 320px;
+$medium-breakpoint: 480px;
+$large-breakpoint: 768px;
+$desktop-breakpoint: 1025px;
+$max-content-breakpoint: 1280px;
+$mobile-menu-breakpoint: $desktop-breakpoint;
+$content-width-gutters: 10px;
+$max-content-breakpoint: 1280px;

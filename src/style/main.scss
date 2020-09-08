@@ -1,0 +1,81 @@
+@import "./colors.scss";
+@import "./variables.scss";
+@import "./form.scss";
+@import "./_rem.scss";
+@import "./dialog.scss";
+
+
+.lang-container {
+  padding: unset;
+  margin-bottom: 14px;
+
+  .lang-wrapper  {
+    padding: unset;
+    text-align: right;
+
+    select {
+      font-weight: 500;
+      height: 30px;
+      border: 1px solid #BEBEBE;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+      text-align-last: center;
+    }
+
+    @include respond(medium) {
+      select {
+        width: 100%;
+      }
+    }
+
+    @include respond(large-up) {
+      select {
+        width: 132px;
+      }
+    }
+
+  }
+}
+
+html {
+  height: 100%;
+
+  body {
+    height: 100%;
+    background-color: $esw-color-background;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.card {
+  border: unset;
+  border-radius: unset;
+}
+
+.return-title {
+  padding-top: 20px;
+}
+
+.return-label {
+  color: $esw-color-text-primary;
+  font-size: rem(16px);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.column-container {
+  border: 0px solid #e0eefa;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ffffff;
+}
+
+.container-body {
+  padding-bottom: 42px;
+  min-height: 100%;
+  margin: 0px;
+}

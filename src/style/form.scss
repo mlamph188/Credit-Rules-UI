@@ -1,0 +1,137 @@
+.form__group {
+  $max-width: 378px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media screen and (max-width: devices-breakpoint(handset, large)) {
+    flex-direction: map-get($retailer-form-style, formGroupDirectionHandsetLg);
+  }
+
+  .form__field {
+    flex: 1;
+    // max-width: $max-width;
+    position: relative;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: devices-breakpoint(tablet, medium)) {
+      margin-bottom: 16px;
+    }
+
+    &.ng-invalid.ng-touched:not(.form__field--focused) {
+      margin-bottom: 15px;
+
+      input:not(:focus) {
+        appearance: none;
+        border: 1px solid $esw-color-error;
+        border-radius: 0;
+      }
+    }
+
+    input {
+      appearance: none;
+      width: 100%;
+      padding: map-get($retailer-form-style, inputPadding);
+      background-color: map-get($retailer-form-style, inputBackgroundColor);
+      border: 1px solid $esw-color-dividers;
+      border-radius: 0;
+      box-shadow: none;
+      outline: none;
+      color: map-get($retailer-form-style, formColor);
+      height: 40px;
+
+      &:focus,
+      &.form__field--has-value {
+        padding: map-get($retailer-form-style, inputPadding);
+
+        & ~ label {
+          top: 4px;
+          font-size: map-get($retailer-form-style, formLabelSizeFilled);
+          line-height: map-get($retailer-form-style, formLabelSizeFilled);
+        }
+      }
+
+      &:disabled {
+        background-color: $esw-color-disabled-background;
+        color: $esw-color-text-primary;
+        /* Disabled input on Safari: https://stackoverflow.com/questions/262158/disabled-input-text-color */
+        opacity: 1;
+        -webkit-text-fill-color: $esw-color-text-primary;
+      }
+
+      &:required {
+        border: 1px solid $esw-color-dividers;
+
+        & ~ label:before {
+          color: map-get($retailer-form-style, asteriskRequiredFieldColor);
+          position: absolute;
+          left: map-get($retailer-form-style, asteriskRequiredFieldOffsetLeft);
+        }
+      }
+
+      &:focus {
+        border: 1px solid $esw-color-primary;
+      }
+
+      &.form__field--with-icon {
+        padding-left: map-get($retailer-form-style, inputPaddingLeftForIcon);
+
+        & ~ label {
+          left: map-get($retailer-form-style, labelLeftForIcon);
+        }
+      }
+    }
+
+    label {
+      font-size: map-get($retailer-form-style, formLabelSize);
+      line-height: map-get($retailer-form-style, formLabelSize);
+      color: map-get($retailer-form-style, formLabelColor);
+      position: absolute;
+      pointer-events: none;
+      left: map-get($retailer-form-style, labelLeft);
+      top: 13px;
+      transition: 0.2s ease all;
+    }
+
+    @media screen and (max-width: devices-breakpoint(tablet, medium)-1) {
+      input,
+      select {
+        appearance: none;
+        padding: 9px 10px 10px 15px;
+        border-radius: 0;
+
+        &:focus,
+        &.form__field--has-value {
+          padding: 16px 10px 3px 15px;
+
+          & ~ label {
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+          }
+        }
+
+        &.form__field--with-icon {
+          padding-left: map-get($retailer-form-style, inputPaddingLeftForIcon);
+
+          & ~ label {
+            left: map-get($retailer-form-style, labelLeftForIcon);
+          }
+        }
+      }
+
+      label {
+        font-size: 1rem;
+        line-height: 1rem;
+        left: 15px;
+      }
+    }
+
+  }
+}
+.error {
+  padding: 1px 0;
+  font-size: $retailer-font-size-error;
+  color: $esw-color-error;
+}

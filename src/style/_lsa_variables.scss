@@ -1,0 +1,259 @@
+$font-style-italic: italic;
+
+//--------------------------------
+//  VIEWPORTS
+//--------------------------------
+$small-breakpoint: 320px;
+$medium-breakpoint: 480px;
+$large-breakpoint: 768px;
+$desktop-breakpoint: 1025px;
+$max-content-breakpoint: 1280px;
+
+
+//--------------------------------
+//  Old styles COLORS
+//--------------------------------
+// names taken from http://www.color-blindness.com/color-name-hue/
+
+$cerulean: #00629b;
+$citrus: #84bd00;
+$dark-gray: #aaa;
+$gainsboro: #e0e0e0;
+$islamic-green: #019328;
+$limeade: #4c891f;
+$nero: #1a1a1a;
+$nobel: #999;
+$rain-forest: #64772d;
+$sangria: #900;
+$white-smoke: #ededed;
+
+//--------------------------------
+// La Senza styles COLORS
+//--------------------------------
+$black: #000;
+$razzle-dazzle-rose: #ff3eb5;
+$hollywood-cerise: #d10081;
+$night-rider: #333;
+$dim-gray: #666;
+$very-light-gray: #ccc;
+$gallery: #efefef;
+$wild-watermelon: #ff4d63;
+$white: #fff;
+$trans: transparent;
+$grey: #e7e7e7;
+
+//--------------------------------
+//  PAGE LAYOUT
+//--------------------------------
+$content-width-gutters: 10px;
+$mobile-menu-breakpoint: $desktop-breakpoint;
+$mobile-nav-breakpoint: 1350px;
+$left-nav-width: 295px; // content and search refinement left navs
+
+
+//--------------------------------
+//  GLOBAL COMPONENTS
+//--------------------------------
+
+// Color Accents
+//------------------------
+$accent1-color: $black; // CTAs, sign-posting, stylistic underlines, headings, footer bkgd, icons...
+$accent2-color: $razzle-dazzle-rose; // secondary icons, less emphatic accents/text...
+$accent3-color: $night-rider; // some content headings
+$accent4-color: $dim-gray; // some homepage content asset headings
+
+// Headings
+//------------------------
+$section-heading-color: $night-rider;
+
+// Body Text
+//------------------------
+$body-text-color: $black;
+$body-text-color-lt: $dim-gray;
+$body-text-color-drk: $night-rider;
+$body-text-color-black: $black;
+$subtle-text-color: $black;
+$alert-color: $hollywood-cerise;
+$inverted-text-color: $white; //over a dark background
+$body-letter-spacing: 0.6px; // 0.025em;
+$breadcrumb-spacer-color: $black !default;
+
+// Background Colors
+//------------------------
+$body-bg: $white;
+$base-bg: $white;
+$header-banner-bg: $night-rider;
+$header-bg: $black;
+$header-nav-mobile-bg: $gallery;
+$footer-bg: $black;
+$subtle-contrast-bg: $white;
+$box-bg: $gallery;
+$box-drk-bg: $black;
+$section-header-bg: $white;
+
+// Borders & Divider Lines
+//------------------------
+$border-color: $very-light-gray;
+$border: 1px solid $border-color;
+$border-thick: 2px solid $border-color;
+$border2-color: $black;
+$border2: 1px solid $border2-color;
+$border3-color: $dim-gray;
+$border3: 1px solid $border3-color;
+$border4-color: $razzle-dazzle-rose;
+$border4: 1px solid $border4-color;
+$border5-color: $white;
+$border5: 1px solid $border5-color;
+
+// Links
+//------------------------
+$link-color: $black;
+$link-hover-color: $black;
+$link-decor: underline;
+$link-hover-decor: underline;
+$link-alt-color: $white;
+$link-alt-hover-color: $white;
+$link-alt-decor: none;
+$link-alt-hover-decor: underline;
+
+// Errors
+//------------------------
+$error-color: $wild-watermelon;
+$error-bg-color: $white;
+$error-border: 1px solid $error-color;
+
+// Drop Shadows
+//------------------------
+$shadow: 0 20px 50px 0 rgba(99, 99, 99, 0.3);
+$shadow2: 3px 0 5px 0 rgba(0, 0, 0, 0.15);
+$shadow-minicart: $shadow;
+$shadow-tile: none;
+
+// Tooltip
+//------------------------
+$tooltip-bg: $white;
+$tooltip-color: $black;
+$tooltip-shadow: 0 0 4px 0 rgba($black, 0.15);
+$tooltip-radius: 2px;
+
+// Dialog
+//------------------------
+$dialog-bg: $base-bg; // white
+$dialog-header-bg: $section-header-bg;
+$dialog-title-color: $body-text-color;
+
+
+//--------------------------------
+//  FORMS
+//--------------------------------
+
+// Input Elements
+//------------------------
+$label-color: $black;
+$label-font: "bold-alt";
+$label-font-size: 11px;
+$input-text-color: $black;
+$input-text-size: 12px;
+$input-border-color: $very-light-gray;
+$input-border-width: 1px;
+$input-border: $input-border-width solid $input-border-color;
+$input-border-radius: 0;
+$input-height: 40px;
+$input-padding-horizontal: 15px;
+$input-bg: $white;
+$textarea-height: 70px;
+$textarea-padding-vertical: 10px;
+$focus-outline-style: none;
+$focus-border: 1px solid $black;
+$dropdown-arrow-icon-color: $black;
+$dropdown-arrow-icon-width: 32px;
+
+// Global Button Styles
+//------------------------
+$btn-height: 50px; //including font height and borders
+$btn-side-padding: 40px;
+$btn-font: "bold-alt";
+$btn-font-size: 13px;
+$btn-letter-space: $body-letter-spacing;
+$btn-border-width: 1px;
+$btn-border-radius: 0;
+$btn-text-transform: uppercase;
+$btn-disabled-opacity: 0.2;
+
+// Primary Button
+//------------------------
+$btn-color: $white; // text
+$btn-bg: $black;
+$btn-border-color: $black;
+$btn-hover-color: $white; // text
+$btn-hover-bg: $dim-gray;
+$btn-hover-border-color: $dim-gray;
+
+// Primary Alt Button
+//------------------------
+$btn-alt-color: $white; // text
+$btn-alt-bg: $black;
+$btn-alt-border-color: $black;
+$btn-alt-hover-color: $white; // text
+$btn-alt-hover-bg: $dim-gray;
+$btn-alt-hover-border-color: $dim-gray;
+
+// Secondary Button
+//------------------------
+$btn2-color: $black; //text
+$btn2-bg: $white;
+$btn2-border-color: $black;
+$btn2-hover-color: $white; //text
+$btn2-hover-bg: $black;
+$btn2-hover-border-color: $black;
+
+// Secondary Alt Button
+//------------------------
+$btn2-alt-color: $white; //text
+$btn2-alt-bg: $black;
+$btn2-alt-border-color: $white;
+$btn2-alt-hover-color: $black; //text
+$btn2-alt-hover-bg: $white;
+$btn2-alt-hover-border-color: $black;
+
+// Tertiary Button
+
+//------------------------
+$btn3-color: $white; // text
+$btn3-bg: $black;
+$btn3-border-color: $black;
+$btn3-hover-color: $white; // text
+$btn3-hover-bg: $dim-gray;
+$btn3-hover-border-color: $dim-gray;
+
+// Error Button
+//------------------------
+$btn-error-color: $wild-watermelon ; // text
+$btn-error-bg: $white;
+$btn-error-border-color: $wild-watermelon ;
+$btn-error-hover-color: $white; // text
+$btn-error-hover-bg: $wild-watermelon ;
+$btn-error-hover-border-color: $wild-watermelon ;
+
+// Large Button Variant
+//------------------------
+$lg-btn-height: 55px;
+$lg-btn-side-padding: 70px;
+$lg-btn-fontsize: 16px;
+
+// Add To Cart Button Variant
+//------------------------
+$a2c-btn-height: 55px;
+$a2c-btn-side-padding: 70px;
+$a2c-btn-fontsize: 16px;
+
+
+//--------------------------------
+//  ICONOGRAPHY
+//--------------------------------
+$icon-fill: $black;
+$icon-hover-fill: $black;
+$icon-header-fill: $white;
+$icon-header-hover-fill: $white;
+$icon-social-fill: $black;
+$icon-social-hover-fill: $razzle-dazzle-rose;

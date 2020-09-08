@@ -1,0 +1,20 @@
+@import '../../style/main.scss';
+
+main {
+  padding-top: 30px;
+
+  .main-container {
+    margin: auto;
+  }
+
+
+  @include respond(medium-down) {
+    width: 90%;
+  }
+
+  @include respond(large-up) {
+    width: 80%;
+  }
+
+
+}

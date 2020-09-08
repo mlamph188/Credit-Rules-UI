@@ -1,0 +1,54 @@
+@import '../style/main.scss';
+@import '../style/mixins.scss';
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  flex: 1 0 auto;
+}
+
+.returns-container {
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+  padding: 0px;
+}
+
+.lang-container {
+  padding: unset;
+  margin-bottom: 14px;
+
+  .lang-wrapper  {
+    padding: unset;
+    text-align: right;
+
+    select {
+      font-weight: 500;
+      height: 30px;
+      border: 1px solid #BEBEBE;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+      text-align-last: center;
+    }
+
+    @include respond(medium) {
+
+      select {
+        width: 100%;
+      }
+
+    }
+
+    @include respond(large-up) {
+
+      select {
+        width: 132px;
+      }
+
+    }
+
+  }
+}

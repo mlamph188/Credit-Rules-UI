@@ -1,0 +1,56 @@
+@import "./variables.scss";
+@import "./colors.scss";
+
+::ng-deep .ui-chkbox {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	width: 20px;
+	height: 20px;
+
+	.ui-chkbox-box {
+		border: 1px solid $font-light;
+		background-color: $bg-light;
+		height: 18px;
+		width: 18px;
+		text-align: center;
+		border-radius: 5px;
+		margin-top: 2px;
+
+		&:not(.ui-state-disabled):hover {
+			border-color: $secondary1-hover;
+		}
+
+		&.ui-state-active {
+			border-color: $secondary1;
+			background-color: $secondary1;
+			color: $bg-light;
+
+			&:not(.ui-state-disabled):hover {
+				border-color: $secondary1;
+				background-color: $secondary1;
+				color: $bg-light;
+			}
+		}
+
+		.ui-chkbox-icon {
+			overflow: unset !important;
+      position: unset !important;
+      height: unset !important;
+      width: unset !important;
+      margin-bottom: 17px;
+
+			&:after {
+				content: "";
+				position: absolute;
+				left: 4px;
+				top: 1px;
+				width: 4px;
+				height: 8px;
+				border: solid $bg-light;
+				border-width: 0 3px 3px 0;
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

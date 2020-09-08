@@ -28,7 +28,11 @@
 						"tsConfig": "src/tsconfig.app.json",
 						"polyfills": "src/polyfills.ts",
 						"assets": ["src/assets", "src/favicon.ico", "src/web.config"],
-						"styles": ["node_modules/@esw/styleguide/dist/scss/index.scss", "src/styles.scss"],
+						"styles": [
+							"node_modules/@esw/styleguide/dist/scss/index.scss",
+							"src/style/main.scss"
+
+						],
 						"scripts": []
 					},
 					"configurations": {

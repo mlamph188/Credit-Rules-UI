@@ -1,0 +1,60 @@
+@import "./mixins.scss";
+
+::ng-deep {
+
+  body .ui-widget-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .ui-dialog .ui-dialog-titlebar {
+    padding: unset;
+    padding-top: 22px;
+    padding-left: 42px;
+  }
+
+  .ui-dialog .ui-dialog-content {
+    padding: unset;
+    padding-left: 42px;
+    padding-top: 15px;
+    padding-right: 42px;
+    padding-bottom: 32px;
+  }
+
+
+  .cancelDialog {
+    background: white;
+  }
+
+  .ui-dialog-title {
+    color: #232323;
+    font-size: rem(20px);
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  .ui-dialog-content p {
+    color: #303030;
+    font-size: rem(14px);
+    line-height: 24px;
+  }
+
+  .dialog-button {
+    float: left;
+    text-align: center;
+  }
+
+  .dialog-button-container  div{
+    margin-bottom: 20px;
+  }
+
+
+  .dialog-button-container {
+    margin: unset;
+  }
+
+  .ui-dialog-footer {
+    padding: unset;
+  }
+
+
+}
