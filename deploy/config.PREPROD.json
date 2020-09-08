@@ -1,0 +1,5 @@
+{
+    "backendApiUrl": "[[add your PREPROD api url here]]",
+    "backendPrefix": "",
+    "appInsights": ""
+}
