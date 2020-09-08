@@ -1,1 +1,140 @@
-<p>credit rules works</p>
+
+
+
+<div class="row container-body">
+    <div class="col-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 column-container">     
+        <h1>Credit Rules UI</h1>
+
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 column-container">     
+        <button class="btn btn__secondary" (click)="addCreditRulesRow()">Add Country Credit Rules</button>
+
+        <div class="col-5 form-group">
+            <label for="exampleInputEmail1">Brand Selection</label>
+            <select class="form-control" formControlName="brand">
+                <option value="0" selected >Please Select Brand</option>
+                <option value="">Nike</option>
+                <option value="">Victoria Secret</option>
+                <option value="">La Senza</option>
+                <option value="">Go Casual</option>
+
+            </select>
+        </div>
+    
+        <form [formGroup]="creditRulesForm">
+
+                <div formArrayName="countryCreditRules">
+
+                    <div *ngFor="let countryCreditRulesControl of countryCreditRulesControls; let i = index"
+                    [formGroupName]="i">
+
+                        <div class="row">
+
+                            <div class="col-5 form-group">
+                                <label for="exampleInputEmail1">Country</label>
+                                <select class="form-control" formControlName="countryIso">
+                                    <option value="" disabled>Please Select Country</option>
+                                    <option value="">UK</option>
+                                    <option value="">Ireland</option>
+                                    <option value="">United States Of America</option>
+                                    <option value="">Spain</option>
+                                    <option value="">France</option>
+                                </select>
+                            </div>
+
+                            <div class="col-5 form-group">
+                                <label for="exampleInputEmail1">Credit Type</label>
+                                <select class="form-control" formControlName="creditTypeId">
+                                    <option value="" disabled>Please Select Credit Type</option>
+                                    <option value="">Shopper at fault Return</option>
+                                    <option value="">Retailer at fault Return</option>
+                                    <option value="">Cancel Order Return</option>
+                                    <option value="">Undeliverable Return</option>
+                                    <option value="">Hub Return</option>
+                                    <option value="">Line item cancel</option>
+                                </select>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn__danger">Delete</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="checkbox-labels">
+                                <label for="">ReturnFee
+                                    <input type="checkbox" class="form-control" formControlName="returnFee" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="checkbox-labels">
+                                <label for="">IsMerchandizeRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isMerchandizeRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsValueAddedServiceRefunadble
+                                    <input type="checkbox" class="form-control" formControlName="isValueAddedServiceRefunadble" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsMerchandizeDutyRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isMerchandizeDutyRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsMerchandizeTaxRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isMerchandizeTaxRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsShippingRefundable
+                                    <input type="checkbox" class="form-control" formControlName="iShippingRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsShippingDutyRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isShippingDutyRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsShippingTaxRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isShippingTaxRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsOtherTaxesRefundable(SalesTax)
+                                    <input type="checkbox" class="form-control" formControlName="isOtherTaxesRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsOtherFeesRefundable (Import/CustomFee )
+                                    <input type="checkbox" class="form-control" formControlName="isOtherFeesRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsInternationalServiceFeeRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isInternationalServiceFeeRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-labels">
+                                <label for="">IsAdminFeeAmountRefundable
+                                    <input type="checkbox" class="form-control" formControlName="isAdminFeeAmountRefundable" value="N/A" placeholder="Return Fee">
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                </div>
+                
+        </form>
+
+        <div>
+            <input type="submit" [disabled]="" class="btn btn__primary" value="Save" />
+
+        </div>
+
+    </div>
+
+
+
+</div>

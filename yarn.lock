@@ -1225,6 +1225,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@ng-bootstrap/ng-bootstrap@^6.1.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-6.2.0.tgz#0506d612ca6002bd8fa398d006fa2641013e11d4"
+  integrity sha512-wqwhnJFyEwvzWQJjXrEt+7oBTSvu2qPbdYvUFYhDVzOJLWB5M7YEhDAkMrfHQJ0pZNBMGr580FqYue+XiURY0Q==
+
 "@ngtools/webpack@9.1.12":
   version "9.1.12"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-9.1.12.tgz#a6e2feb40db442335a1c79af4044d399767b5e81"
@@ -2205,6 +2210,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@^4.5.0:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.2.tgz#a85c4eda59155f0d71186b6e6ad9b875813779ab"
+  integrity sha512-vlGn0bcySYl/iV+BGA544JkkZP5LB3jsmkeKLFQakCOwCM3AOk7VkldBz4jrzSe+Z0Ezn99NVXa1o45cQY4R6A==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -7857,6 +7867,18 @@ prepend-http@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+
+primeicons@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-4.0.0.tgz#a3594b3af213dcf8c4c3d6fc99eea05b7c92f57c"
+  integrity sha512-JQBIswGSItn8I0Pq21RchENpKJxSi1MjfBDfggMQpXtoKNKblJoHmol/7tCV3CAV2Dlb94ht8TD8qdIAW01pGg==
+
+primeng@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-10.0.0.tgz#5875d1b693a9f41feb905aaded1228b0b61bcc1d"
+  integrity sha512-3W2AN6YvSPC9v78XgGQ/xJ7e4aQR1vECVXQioy5Av5sxM7LBB4aEgqnQt5jCxMXl/NDXTVIsjKVWIVvl/nPsXA==
+  dependencies:
+    tslib "^2.0.0"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"

@@ -1,20 +1,15 @@
 @import '../../style/main.scss';
 
-main {
-  padding-top: 30px;
+.checkbox-labels {
+  padding-left: 15px;
 
-  .main-container {
-    margin: auto;
+  label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
   }
-
-
-  @include respond(medium-down) {
-    width: 90%;
-  }
-
-  @include respond(large-up) {
-    width: 80%;
-  }
-
 
 }
