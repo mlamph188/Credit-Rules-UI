@@ -1,0 +1,5 @@
+{
+    "backendApiUrl": "[[add your SAND api url here]]",
+    "backendPrefix": "",
+    "appInsights": ""
+}

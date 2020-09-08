@@ -1,0 +1,5 @@
+{
+    "backendApiUrl": "[[add your TEST api url here]]",
+    "backendPrefix": "",
+    "appInsights": ""
+}
